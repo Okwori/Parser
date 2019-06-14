@@ -18,7 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileUrlResource;
 
 import java.io.IOException;
 
@@ -52,7 +52,7 @@ public class BatchConfig {
     public FlatFileItemReader<AccessLog> logItemReader() throws IOException {
 
         FlatFileItemReader<AccessLog> flatFileItemReader = new FlatFileItemReader<>();
-        flatFileItemReader.setResource(new ClassPathResource(myArgs));
+        flatFileItemReader.setResource(new FileUrlResource(myArgs));
         flatFileItemReader.setName("WH-Log-Reader");
         flatFileItemReader.setLineMapper(logLineMapper());
 
