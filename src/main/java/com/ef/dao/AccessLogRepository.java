@@ -9,6 +9,6 @@ import java.util.List;
 
 public interface AccessLogRepository  extends JpaRepository<AccessLog, Long> {
 
-    @Query("select u from User u where u.date between ?1 and ?2 group by u.ipAddress having count(u.ipAddress) >= ?3")
+    @Query("select al from AccessLog al where al.date between ?1 and ?2 group by al.ipAddress having count(al.ipAddress) >= ?3")
     List<AccessLog> findLogsByDatesAndThreshold(Date startDate, Date endDate, Long threshold);
 }
