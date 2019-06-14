@@ -12,13 +12,22 @@
     <artifactId>parser</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>parser</name>
+
     <description>Log Parser - WH Test</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
+    <developers>
+        <developer>
+            <name>Simon Okwori</name>
+            <email>simon.okwori@gmail.com</email>
+        </developer>
+    </developers>
+
     <dependencies>
+        <!-- Boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-batch</artifactId>
@@ -31,17 +40,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        <!-- DB -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+        <!-- Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
