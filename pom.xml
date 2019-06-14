@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.ef</groupId>
     <artifactId>parser</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>parser</name>
 
     <description>Log Parser - WH Test</description>
