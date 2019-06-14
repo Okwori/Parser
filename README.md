@@ -14,7 +14,7 @@ Create schema `parser`
 
 To start the parser application, navigate to dir containing the `parser-0.0.1.jar` and `access.log` files (or navigate as needed to locate files) as shown in terminals:
 
-    java -jar parser-0.0.1.jar --accesslog=access.log --startDate=2017-01-01.00:00:00 --duration=hourly --threshold=50
+    java -jar parser-0.0.1.jar --accesslog=./access.log --startDate=2017-01-01.00:00:00 --duration=hourly --threshold=50
 
 Runs on port `8080` or as specified in terminal
 
