@@ -60,7 +60,6 @@ public class BatchConfig {
     }
 
     @Bean
-
     public LineMapper<AccessLog> logLineMapper(){
 
         DefaultLineMapper<AccessLog> defaultLineMapper = new DefaultLineMapper<>();
