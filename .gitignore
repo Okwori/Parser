@@ -30,3 +30,4 @@ HELP.md
 .vscode/
 /mvnw.cmd
 /mvnw
+!/src/main/resources/access.log
